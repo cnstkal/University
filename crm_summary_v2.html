@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>고객관계관리 시험 요약</title>
+<style>
+:root{--bg:#f7f2e8;--card:#fffdf8;--ink:#2d2b26;--mut:#6f6a5f;--line:#e8e0cf;--ac:#3f6b5e;
+--c0:#e3eee6;--c1:#f6e6d3;--c2:#e1ebf3;--c3:#f3e1e3;--c4:#ebe4f3;--c5:#f4efc9}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+header{padding:calc(env(safe-area-inset-top,0px) + 20px) 18px 10px}
+h1{font-size:22px;font-weight:800}
+header p{color:var(--mut);font-size:13px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 14px 10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+nav button{font:inherit;font-size:12.5px;line-height:1.25;padding:7px 2px;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:12px;touch-action:manipulation}
+nav button span{display:block;font-size:18px}
+nav button.on{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+main{padding:14px 14px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.intro{background:var(--ac);color:#fff;border-radius:16px;padding:14px 16px;margin-bottom:14px;font-size:14px}
+.intro b{display:block;font-size:17px;margin-bottom:2px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px}
+.s h2{font-size:16.5px;font-weight:800;display:flex;gap:8px;align-items:center}
+.s h2 i{font-style:normal;font-size:20px}
+.q{margin:8px 0 12px;background:var(--c5);border-radius:12px;padding:8px 12px;font-size:13.5px;color:#4d4a2a}
+.q::before{content:"쉽게 말해 ";font-weight:800}
+.blk{margin-top:10px}
+.r{padding:7px 0;display:flex;flex-direction:column;gap:3px;align-items:flex-start}
+.r+.r{border-top:1px dashed var(--line)}
+.p{font-size:13px;padding:2px 10px;border-radius:99px;font-weight:700}
+.r span{font-size:14px;color:#3d3b35}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g .t{border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
+.g .t:last-child:nth-child(odd){grid-column:span 2}
+.t b{font-size:14px}.t span{font-size:13px;color:#46433b;line-height:1.5}
+.f{list-style:none}
+.f li{display:flex;gap:10px;position:relative;padding-bottom:12px}
+.f li:last-child{padding-bottom:0}
+.f li::before{content:"";position:absolute;left:12px;top:26px;bottom:2px;width:2px;background:var(--line)}
+.f li:last-child::before{display:none}
+.f i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-style:normal;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.f b{display:block;font-size:14.5px}.f span{font-size:13px;color:var(--mut)}
+.v{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.v>div{border-radius:12px;padding:10px}
+.v b{display:block;font-size:14px;margin-bottom:4px}
+.v p{font-size:13px;line-height:1.5;color:#46433b;padding:2px 0}
+.cmp{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:1px;background:var(--line);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.cmp div{background:var(--card);padding:7px 8px;font-size:12.5px;line-height:1.45}
+.cmp .h{font-weight:800;text-align:center}
+.cmp .l{font-weight:700;color:var(--ac);background:#f4f1e8}
+.big{text-align:center;font-weight:800;font-size:16px;line-height:1.5;background:var(--c0);color:#27483e;border-radius:12px;padding:12px 10px}
+.k{margin-top:12px;padding:9px 12px;border-left:4px solid var(--ac);background:#f1f5f0;border-radius:6px;font-size:13.5px;font-weight:600;color:#27483e}
+.k::before{content:"📌 "}
+.c0{background:var(--c0)}.c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}.c4{background:var(--c4)}.c5{background:var(--c5)}
+</style>
+</head>
+<body>
+<header><h1>📚 고객관계관리 시험 요약</h1><p>탭을 눌러 장을 바꿔요</p></header>
+<nav id="n"></nav>
+<main id="m"></main>
+<script>
+const D=[
+["🤝","CRM 기본","CRM이 뭐고 왜 필요할까?",[
+["🤝","CRM이란?","고객을 알아가며 단골로 만드는 경영 방식",[["l",[["정의","고객을 정확히 이해하고 원하는 제품·서비스를 계속 제공해 장기 관계를 만드는 통합 경영활동"],["아님!","단순 고객정보 저장 기술이 아니라, 분석해서 마케팅·영업·서비스에 쓰는 전략"]]],["g",[["고객 유지","오래 거래"],["고객 만족","충성도 강화"],["수익성 향상","우량고객 확보"],["LTV 극대화","추가 구매 유도"]]]],"CRM = 고객 이해 → 장기 관계 → 수익성 향상"],
+["📈","왜 필요해졌나","손님 눈높이는 올라가고, 새 손님은 구하기 어려워서",[["g",[["고객 기대 상승","더 높은 품질·가치를 기대"],["글로벌 소통","인터넷으로 시공간 제약 없이 정보 공유"],["고객지향 경영","고객은 기업 활동에 참여하는 존재"],["신규 확보 어려움","경쟁 심화, 차별화 어려움"]]]],"신규 획득 비용 = 유지 비용의 2~3배 (자료에 따라 약 5배)"],
+["🕰","CRM 발전 과정","동네가게 → 대량판매 → 고객 맞춤 → 데이터 분석",[["f",[["과거: 긴밀한 관계","동네 가게처럼 개별 고객을 알고 관리"],["산업사회: Push","대량생산·소비, 불특정 다수에 일방 판매"],["현대: Pull","고객 세분화, 고객 필요 중심 접근"],["데이터 기반 CRM","데이터마이닝(패턴 발견)·OLAP(다차원 분석)"]]]]],
+["🎯","CRM 범위 3가지","모으고 → 지키고 → 키운다",[["f",[["확보 Acquisition","잠재고객을 우량고객으로 전환"],["유지 Retention","이탈 원인 파악, 기존 고객 관계 유지"],["발굴 Cultivation","교차판매·업셀링·로열티로 새 가치 창출"]]]],"확보 · 유지 · 발굴"],
+["⚔️","교차판매 vs 업셀링","옆으로 더 팔까, 위로 올려 팔까",[["v",[["교차판매 Cross","관련된 다른 상품을 함께 판매","예) 은행·보험·증권 상품"],["업셀링 Up","상위 버전·신상품 구매 유도","예) 포인트 제공 활용"]]]]],
+["🔑","도입·성공 요인","시스템만 사면 끝? 아니에요",[["g",[["맞춤 전략","자사 고객·사업 특성 분석"],["전문 인력","실제로 활용할 사람"],["전사 협력","마케팅·영업·서비스 정보 공유"],["CEO 주도","조직 의지·자원 결집"],["고객에게 배우기","피드백 반영"],["장기 실행","일회성 이벤트 X, 지속 프로세스"]]]]],
+["🏢","적용 사례","회사별 키워드만 기억!",[["l",[["삼성카드","리워드로 우량고객 확충"],["신한카드","우수·중상층 고객 타깃 영업"],["현대카드","라이프스타일별 세분화·차별화"],["야쿠르트 콜드브루","희소성·접근성·신속한 욕구 충족"]]]]]
+]],
+["🛒","마케팅 기본","마케팅의 기초 개념 모음",[
+["🧭","마케팅 4가지 관점","회사가 무엇을 중심에 두느냐",[["l",[["생산지향","싸고 쉽게 살 수 있게 (공급)"],["제품지향","품질·성능 좋은 제품"],["판매지향","적극 판매·촉진해야 팔린다"],["마케팅지향","고객 욕구 우선 + 사회복지까지 (사회친화)"]]]],"생산=공급 / 제품=품질 / 판매=촉진 / 마케팅=고객"],
+["🧩","마케팅믹스 4P","제품·가격·유통·촉진의 조합",[["g",[["Product 제품","상품·서비스·품질·상표"],["Price 가격","이용 대가. 요즘은 품질·서비스·브랜드도 중요"],["Place 유통","제조·도매·소매·소비자, 온·오프라인 융합"],["Promotion 촉진","광고·판매촉진·홍보·인적판매"]]]],"상표 = 인지·선호↑ / 무상표 = 싸지만 품질 의심"],
+["🚀","신제품 개발 & PLC","아이디어에서 출시까지, 그리고 제품의 일생",[["f",[["아이디어 창출·선별",""],["제품 개념 개발·테스트",""],["마케팅 전략·사업성 분석",""],["제품 개발·시험마케팅",""],["시장 출시",""]]],["f",[["도입기","처음 출시"],["성장기","판매·관심 증가"],["성숙기","포화, 경쟁 치열"],["쇠퇴기","판매 감소"]]]],"판매량은 수명주기가 아니라 마케팅 전략의 결과"],
+["📣","촉진 4가지","알리고 설득하는 도구",[["g",[["광고","대중매체로 반복 전달 / 비용 높음"],["인적판매","직접 소통, 설득력 / 조직 유지비 큼"],["판매촉진","할인·쿠폰·견본·경품, 단기 효과"],["홍보","무료로 기사화, 광고보다 신뢰"]]]]],
+["💬","구전 vs 바이럴","입에서 입으로 vs 네트워크로 퍼짐",[["v",[["구전 마케팅","소비자끼리 정보 전달","삼성전자 SNS·블로그"],["바이럴 마케팅","SNS로 빠르게 확산","코카콜라 감성 마케팅"]]]]],
+["🛍","구매결정 유형·과정","얼마나 고민하느냐 / 어떤 순서로 사느냐",[["l",[["포괄적","위험·불확실성 클 때, 많은 시간·노력"],["제한적","적당한 노력으로 대안 평가"],["습관적","거의 노력 없이 익숙하게 구매"]]],["f",[["문제 인식",""],["정보 수집",""],["대안 평가",""],["구매 결정",""],["구매 후 평가","만족 → 재구매 + 긍정적 구전"]]]]]
+]],
+["🎯","전략적 마케팅","누구에게 어떻게 다가갈까",[
+["🧲","STP 전략","시장을 쪼개고, 고르고, 자리 잡기",[["f",[["Segmentation 세분화","시장을 특성별로 나눔 (인구통계·라이프스타일·추구 혜택)"],["Targeting 표적 선정","집중할 세분시장 선택"],["Positioning 포지셔닝","고객 인식 속 차별화된 이미지 형성"]]]],"STP = 세분화 → 표적 선정 → 포지셔닝"],
+["🎪","표적시장 접근 3가지","얼마나 넓게 겨냥하나",[["g",[["대량마케팅","대량생산·유통·촉진으로 넓은 시장"],["다양화 마케팅","품질·속성·크기·스타일 차별화"],["표적마케팅","선정한 세분시장에 집중"]]]]],
+["📉","불황기 소비자 4유형","불황에 지갑을 여는 방식",[["g",[["인내하는 그룹","지출 줄이나 비교적 긍정적"],["급브레이크 그룹","구매 미루고 필수품 위주"],["현재를 즐기는 그룹","적극 소비, 도시 젊은층"],["여유로운 그룹","경제적 자신감, 영향 적음"]]],["l",[["품목 4구분","필수품 / 연기 가능 품목 / 만족을 주는 품목 / 소모품(먼저 제외)"]]]]],
+["🔁","실행·통제 & O2O","전략은 세우고 끝이 아니다",[["v",[["실행","실행계획·조직구조·운영절차·인적자원"],["통제","결과 평가 후 수정해 목표 달성 지원"]]],["l",[["전략 변화 원인","고객 기대 변화 / 경쟁·트렌드 / 정보기술 발전"],["O2O","온라인 편의 + 오프라인 체험 연결 (삼성·코오롱·세정)"]]]]],
+["🔄","대중마케팅 → CRM","낯선 다수 → 아는 한 사람",[["c",["대중마케팅","CRM",[["대상","불특정 다수","개별 고객·집단"],["소통","일방향","양방향"],["초점","가격·품질","욕구·경험"],["목표","신규 확보","확보+유지"],["기간","단기 거래","장기 관계·LTV"]]]]],"STP로 목표·포지셔닝 설정 → CRM으로 집단별 맞춤 관리"]
+]],
+["📊","CRM 실행","데이터로 고객을 나누고 관리하기",[
+["🧠","고객 욕구와 IT 활용","정보기술로 고객 맞춤 서비스 만들기",[["l",[["욕구 이해","고객마다 동기가 달라 유형별 차별화 (매슬로우 욕구계층)"]]],["g",[["고객화","개인 기호 맞춤 · 리바이스 청바지"],["원스톱","한곳에서 해결 · 오토바이텔"],["매칭","욕구와 상품 연결 · 인터넷 TV 가이드"],["적시 제공","원하는 시간에 · 음식배달"],["추천","구매이력 기반 · 아마존"],["메타 프로덕트","목적 달성용 묶음 · 온라인 식료품 배달"]]]]],
+["📐","고객 세분화 & RFM","얼마나 최근에, 자주, 많이 샀나?",[["g",[["R 최근성","마지막 구매 시점. 최근일수록 활성 고객"],["F 빈도","구매 횟수. 많을수록 충성도 높을 가능성"],["M 금액","지출액. 클수록 고가치 고객"]]],["l",[["LRFM","RFM + 고객 생애가치(LTV)"],["활용","응답 가능성·마케팅 비용 고려, 수익성 높은 군에 집중"],["주의점","기존 정보를 새 관점으로 / 의향보다 실제 행동 / 현장 활용 가능해야"]]]],"RFM = 최근성 · 빈도 · 금액"],
+["🏬","프론트 vs 백오피스","고객을 만나는 곳 vs 분석하는 곳",[["v",[["프론트오피스","고객 접점(마케팅·영업·지원)에서 정보 수집·관리"],["백오피스","데이터 정리·분석, 전략 수립"]]]],"프론트 수집 → 백오피스 분석 → 접점에서 활용"],
+["🔧","CRM 성공을 위한 변화","5가지 영역이 함께 바뀌어야 성공",[["c",["기존","변화",[["비전","기업 중심","고객 중심"],["분석","개별 판단","데이터 기반"],["전략","고정","유연하게 수정"],["실행","부분 관리","접점 통합 관리"],["조직","기존 구조","업무 전문가 중심"]]]]],"DB마케팅 + 관계마케팅 통합, 모바일·디지털 쿠폰 활용"]
+]],
+["✨","CRM 실천","현장에서 어떻게 적용할까",[
+["😊","UX·현지화·행복마케팅","가격보다 경험, 우리 시장에 맞게",[["l",[["UX","이용하며 느끼는 전체 경험. 혁신의 가치는 사용 과정에서 드러남"],["퀵서비스 예","1만 원 퀵이 250원 우체국보다 빠르고 만족스러워 선택됨"],["현지화","시장마다 요구 다름 → 현지 고객 분석 (우버의 한국 실패)"],["행복 마케팅","번 슈미트. 감정·경험 가치 (포도·그린애플 요구르트)"]]]]],
+["🪜","CRM 전략 수립 6단계","분석 → 설계 → 실행 → 개선",[["f",[["환경분석","시장·경쟁·트렌드"],["고객분석","욕구·구매행동·선호"],["전략방향 설정","CRM 목표"],["오퍼·개인화·커뮤니케이션 설계","고객군별 제안·소통"],["시스템 구축·행동 실행",""],["성과 측정·개선",""]]]]],
+["🎁","오퍼 vs 개인화","모두에게 같은 쿠폰 vs 나만을 위한 추천",[["c",["오퍼","개인화",[["대상","넓은 고객군","개별·소수"],["방식","표준화 제안","맞춤 제안"],["목적","신속 고객 확보","만족·충성도"],["중요 단계","신규 획득","기존 유지"]]]]]],
+["🖥","Frontend vs Backend","고객 대응부터 하지 말고 이해부터",[["v",[["Frontend","고객과 직접 상호작용하는 채널·인터페이스"],["Backend","고객 정보 관리, 행동 패턴 분석"]]],["l",[["순서","백엔드 분석 → 프론트 서비스·개인화에 활용"],["수집 데이터","구매이력·선호·방문빈도·만족도·피드백. 의사결정에 필요한 것만 선별"]]]]],
+["🏪","쇼루밍·O2O·대량맞춤","체험, 연결, 그리고 맞춤 생산",[["v",[["쇼루밍","오프라인 체험 후 온라인 구매 (고객 행동)","보노보스·와비파커"],["O2O","온·오프라인 연결로 경험 개선 (전략)","삼성·코오롱·세정"]]],["l",[["대량맞춤","대량생산 효율 + 개별 욕구 충족 (Dell 맞춤 PC)"]]]]],
+["📊","점유율 & 20:80 법칙","시장보다 고객 한 명의 지갑을 더 차지하자",[["v",[["시장점유율","전체 시장에서 기업 비율","신규 확보 관점"],["고객점유율","한 고객 전체 구매 중 기업 비중","CRM이 중시"]]],["big","고객 20% → 수익 80%"],["l",[["차등 관리","고가치=프리미엄·개인화 / 저수익=수익성 개선 / 이탈 위험 고가치=이탈 방지 집중"],["유지 수단","정기 소통·맞춤 오퍼·보상 프로그램·신속한 문제 해결"]]]],"신규 획득 비용은 유지 비용의 약 5배"],
+["🏁","성공 조건·데이터 순환·미래","기술만으로는 성공하지 못한다",[["g",[["인력 역량","분석·개인화 전문 인력"],["조직문화","전 직원 고객중심"],["프로세스 혁신","절차 재설계"],["고객 여정 맵핑","인지~구매·사용·재구매 접점 파악"],["접점별 경험 설계","접점마다 만족도 향상"],["채널 통합·개선","온·오프·모바일 연결"]]],["f",[["데이터 수집",""],["분석·인사이트",""],["실행 계획",""],["성과 측정·피드백","다시 데이터에 반영"]]],["l",[["미래","AI · 빅데이터 · 클라우드 · 예측·개인화 · 프라이버시 보호·규정 준수"]]]]]
+]],
+["💎","LTV 전략","고객 한 명의 평생 가치를 키우자",[
+["💎","LTV vs CAC","평생 벌어다 주는 돈 vs 데려오는 데 쓴 돈",[["v",[["LTV","고객이 관계 전체 기간 창출하는 총 순이익 (누적 매출·이익)"],["CAC","신규 고객 1명 확보 비용"]]],["big","LTV : CAC = 3 : 1 이상"],["l",[["왜 중요?","디지털 채널 포화·경쟁으로 신규 확보 비용↑ → 유지·반복 구매가 중요"],["1:1이면?","획득 비용 회수 어려워 현금흐름 악화"]]]],"CAC 1만 원 → LTV 3만 원 이상 목표"],
+["🧮","LTV 공식","세 개를 곱한다",[["big","LTV = 구매 단가 × 구매 빈도 × 유지 기간"]],"단순화한 개념식. 실제 순이익은 비용도 고려"],
+["🚀","LTV 높이는 3전략","단가↑ 빈도↑ 이탈↓",[["g",[["구매 단가↑","업셀링: 프리미엄 유도 / 크로스셀링: 노트북→마우스"],["구매 빈도↑","구독·포인트·멤버십으로 재방문, 구매 간격 단축"],["이탈률↓","이탈 징후 조기 발견, 맞춤 쿠폰·복귀 프로모션"]]]]],
+["🏆","기업 사례 & 락인","한번 들어오면 나가기 싫게",[["g",[["쿠팡 와우","쿠팡이츠·플레이 연계 → 소비 분야·결제액↑"],["네이버플러스","포인트 적립·재사용 → 재방문 유도"],["스타벅스 리워드","앱 데이터로 맞춤 쿠폰·추천 → 이탈↓"]]],["l",[["락인 Lock-in","포인트·데이터·습관·구독 혜택이 쌓여 다른 서비스로 옮기기 어려운 현상 (전환 비용↑)"]]],["f",[["구매",""],["포인트 적립",""],["포인트 사용",""],["재방문·재구매","→ 다시 적립 (플라이휠 선순환)"]]]]],
+["🗺","LTV 극대화 3단계","순서가 중요! 통합 → 분석 → 실행",[["f",[["Data Integration 데이터 통합","온·오프라인, 고객센터, 앱 정보 통합. 도구: CDP(고객 데이터 플랫폼)"],["RFM Segmentation 세분화","VIP / 성장 잠재 / 이탈 위험군으로 분류"],["Personalized Action 개인화 실행","VIP=전담·프리미엄, 성장 잠재=빈도↑·고가 추천, 이탈 위험=쿠폰·복귀 보상"]]]]],
+["🧵","전체 흐름 한눈에","시험 직전 마지막 확인",[["f",[["고객 이해",""],["전략 수립","STP"],["맞춤형 실행","개인화"],["고객 경험 개선","UX"],["고객 유지 & LTV 향상",""]]]],"① CRM=장기 관계로 수익성↑ ② LTV=단가·빈도·유지기간 ③ 실행=통합→세분화→개인화"]
+]]
+];
+const n=document.getElementById('n'),m=document.getElementById('m');
+D.forEach((c,i)=>{const b=document.createElement('button');b.innerHTML=`<span>${c[0]}</span>${c[1]}`;b.onclick=()=>show(i);n.appendChild(b)});
+const cc=i=>'c'+(i%5);
+const R={
+l:d=>d.map((r,i)=>`<div class="r"><b class="p ${cc(i)}">${r[0]}</b><span>${r[1]}</span></div>`).join(''),
+g:d=>`<div class="g">${d.map((r,i)=>`<div class="t ${cc(i)}"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</div>`,
+f:d=>`<ol class="f">${d.map((r,i)=>`<li><i>${i+1}</i><div><b>${r[0]}</b>${r[1]?`<span>${r[1]}</span>`:''}</div></li>`).join('')}</ol>`,
+v:d=>`<div class="v">${d.map((r,i)=>`<div class="${cc(i*2)}"><b>${r[0]}</b>${r.slice(1).map(x=>`<p>${x}</p>`).join('')}</div>`).join('')}</div>`,
+c:d=>`<div class="cmp"><div class="h"></div><div class="h">${d[0]}</div><div class="h">${d[1]}</div>${d[2].map(r=>`<div class="l">${r[0]}</div><div>${r[1]}</div><div>${r[2]}</div>`).join('')}</div>`,
+big:d=>`<div class="big">${d}</div>`
+};
+function show(i){
+[...n.children].forEach((b,j)=>b.classList.toggle('on',i===j));
+const c=D[i];
+m.innerHTML=`<div class="intro"><b>${c[0]} ${c[1]}</b>${c[2]}</div>`+c[3].map(s=>`<section class="s"><h2><i>${s[0]}</i>${s[1]}</h2><div class="q">${s[2]}</div>${s[3].map(b=>`<div class="blk">${R[b[0]](b[1])}</div>`).join('')}${s[4]?`<div class="k">${s[4]}</div>`:''}</section>`).join('');
+scrollTo(0,0);
+}
+show(0);
+let t=0;
+document.addEventListener('touchend',e=>{const x=Date.now();if(x-t<350)e.preventDefault();t=x},{passive:false});
+['gesturestart','gesturechange','dblclick'].forEach(v=>document.addEventListener(v,e=>e.preventDefault()));
+</script>
+</body>
+</html>
