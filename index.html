@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>시험 대비 요약</title>
+<style>
+:root{--bg:#f7f2e8;--card:#fffdf8;--ink:#2d2b26;--mut:#6f6a5f;--line:#e8e0cf;--ac:#3f6b5e}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+main{padding:calc(env(safe-area-inset-top,0px) + 36px) 18px calc(env(safe-area-inset-bottom,0px) + 40px)}
+h1{font-size:25px;font-weight:800;line-height:1.35}
+p.sub{color:var(--mut);font-size:14px;margin:6px 0 26px}
+a{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 16px;margin-bottom:12px;touch-action:manipulation}
+a:active{background:#f1ede0}
+.ic{flex:none;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.tx{flex:1;min-width:0}
+.tx b{display:block;font-size:17px}
+.tx span{font-size:13px;color:var(--mut)}
+.go{color:var(--ac);font-size:20px}
+</style>
+</head>
+<body>
+<main>
+<h1>📚 시험 대비 요약</h1>
+<p class="sub">과목을 골라 들어가세요</p>
+<a href="crm_summary_v2.html"><div class="ic" style="background:#e3eee6">🤝</div><div class="tx"><b>고객관계관리</b><span>CRM · RFM · LTV</span></div><div class="go">›</div></a>
+<a href="accounting.html"><div class="ic" style="background:#e1ebf3">🧾</div><div class="tx"><b>전산세무회계실무</b><span>전산 회계·세무 실무</span></div><div class="go">›</div></a>
+<a href="income_tax.html"><div class="ic" style="background:#f6e6d3">💰</div><div class="tx"><b>소득세실무</b><span>소득세 실무</span></div><div class="go">›</div></a>
+</main>
+<script>
+let t=0;
+document.addEventListener('touchend',e=>{const x=Date.now();if(x-t<350)e.preventDefault();t=x},{passive:false});
+['gesturestart','gesturechange','dblclick'].forEach(v=>document.addEventListener(v,e=>e.preventDefault()));
+</script>
+</body>
+</html>
