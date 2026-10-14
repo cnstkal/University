@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>소득세실무 요약</title>
+<style>
+:root{--bg:#f7f2e8;--card:#fffdf8;--ink:#2d2b26;--mut:#6f6a5f;--line:#e8e0cf;--ac:#3f6b5e;
+--c0:#e3eee6;--c1:#f6e6d3;--c2:#e1ebf3;--c3:#f3e1e3;--c4:#ebe4f3;--c5:#f4efc9}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+header{padding:calc(env(safe-area-inset-top,0px) + 16px) 18px 8px}
+header a{font-size:13px;color:var(--ac);text-decoration:none;font-weight:700;display:inline-block;padding:4px 0;touch-action:manipulation}
+h1{font-size:22px;font-weight:800}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 14px 10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+nav button{font:inherit;font-size:12.5px;line-height:1.25;padding:7px 2px;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:12px;touch-action:manipulation}
+nav button span{display:block;font-size:18px}
+nav button.on{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+main{padding:14px 14px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.intro{background:var(--ac);color:#fff;border-radius:16px;padding:14px 16px;margin-bottom:14px;font-size:14px}
+.intro b{display:block;font-size:17px;margin-bottom:2px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px}
+.s h2{font-size:16.5px;font-weight:800;display:flex;gap:8px;align-items:center}
+.s h2 i{font-style:normal;font-size:20px}
+.q{margin:8px 0 12px;background:var(--c5);border-radius:12px;padding:8px 12px;font-size:13.5px;color:#4d4a2a}
+.q::before{content:"쉽게 말해 ";font-weight:800}
+.blk{margin-top:10px}
+.r{padding:7px 0;display:flex;flex-direction:column;gap:3px;align-items:flex-start}
+.r+.r{border-top:1px dashed var(--line)}
+.p{font-size:13px;padding:2px 10px;border-radius:99px;font-weight:700}
+.r span{font-size:14px;color:#3d3b35}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g .t{border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
+.g .t:last-child:nth-child(odd){grid-column:span 2}
+.t b{font-size:14px}.t span{font-size:13px;color:#46433b;line-height:1.5}
+.f{list-style:none}
+.f li{display:flex;gap:10px;position:relative;padding-bottom:12px}
+.f li:last-child{padding-bottom:0}
+.f li::before{content:"";position:absolute;left:12px;top:26px;bottom:2px;width:2px;background:var(--line)}
+.f li:last-child::before{display:none}
+.f i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-style:normal;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.f b{display:block;font-size:14.5px}.f span{font-size:13px;color:var(--mut)}
+.v{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.v>div{border-radius:12px;padding:10px}
+.v b{display:block;font-size:14px;margin-bottom:4px}
+.v p{font-size:13px;line-height:1.5;color:#46433b;padding:2px 0}
+.cmp{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:1px;background:var(--line);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.cmp div{background:var(--card);padding:7px 8px;font-size:12.5px;line-height:1.45}
+.cmp .h{font-weight:800;text-align:center}
+.cmp .l{font-weight:700;color:var(--ac);background:#f4f1e8}
+.big{text-align:center;font-weight:800;font-size:16px;line-height:1.5;background:var(--c0);color:#27483e;border-radius:12px;padding:12px 10px}
+.k{margin-top:12px;padding:9px 12px;border-left:4px solid var(--ac);background:#f1f5f0;border-radius:6px;font-size:13.5px;font-weight:600;color:#27483e}
+.k::before{content:"📌 "}
+.c0{background:var(--c0)}.c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}.c4{background:var(--c4)}.c5{background:var(--c5)}
+</style>
+</head>
+<body>
+<header><a href="index.html">‹ 홈으로</a><h1>💰 소득세실무</h1></header>
+<nav id="n"></nav>
+<main id="m"></main>
+<script>
+const D=[
+["🧭","기본개념","거주자, 과세기간, 납세지",[
+["📜","소득세 과세 원칙","법에 적힌 소득만 과세한다",[["l",[["열거주의","소득세법에 열거된 소득만 과세 (이자·배당·연금·기타소득도 열거 범위 안)"],["소득원천설","계속·반복적으로 발생하는 소득을 과세"],["순자산증가설","순자산을 늘리는 경제적 이익을 폭넓게 과세"],["과세기간","매년 1월 1일~12월 31일"]]]],"복식부기의무자가 아닌 개인사업자의 사업용 유형자산 처분이익은 총수입금액에 산입 안 함 (소득원천설 연결)"],
+["🏠","거주자 vs 비거주자","국내외 소득 모두냐, 국내 소득만이냐",[["c",["거주자","비거주자",[["기준","국내 주소 있거나 국내 거소 183일 이상","거주자가 아닌 개인"],["과세대상","국내·외 원천소득","국내원천소득"],["판단","주소·가족·직업·자산 등 생활관계","거주자 해당 여부"]]]]],"며칠 있었는지만으로 판단하지 않음"],
+["🧳","거주자 사례 & 예외","원칙과 예외를 구분",[["g",[["주소가 국내","국내에 주소를 둠"],["183일 이상 직업","183일 이상 거주가 통상 필요한 직업"],["가족·생활관계","국내에 생계 같이하는 가족 등"]]],["l",[["국외근무공무원","국외 거주해도 거주자 취급 가능"],["주한 외교관·가족","비거주자 가능"],["외국인 특례","과거 10년 중 국내 주소·거소 합계 5년 이하면 국외원천소득 과세 특례"]]]]],
+["📅","거주자가 되는 시기 & 과세기간","날짜 세 개 + 과세기간 변형",[["g",[["주소를 둔 날",""],["주소 간주 사유 발생일",""],["거소 183일이 되는 날",""]]],["l",[["일반","1/1~12/31"],["거주자 사망","1/1~사망일"],["국외 이전(비거주자 전환)","1/1~출국일"],["사망 시 신고기한","상속개시일이 속하는 달 말일부터 6개월 (5/6 사망 → 11/30)"]]]]],
+["📍","납세지","세금을 신고·납부하는 장소",[["l",[["거주자","주소지"],["주소지 없는 거주자","거소지"],["국내사업장 있는 비거주자","국내사업장 소재지 (둘 이상이면 주된 사업장)"],["국내사업장 없는 비거주자","국내원천소득 발생 장소"],["납세조합 원천징수","납세조합 소재지"]]]],"납세지 변경 신고: 변경일부터 15일 이내"]
+]],
+["🏦","이자·배당소득","종류와 수입시기",[
+["💳","이자소득의 종류","돈을 빌려주고 받는 대가",[["g",[["예금 이자","국내외 예금 이자"],["채권 이자·할인액","국가·지자체 발행 채권·증권"],["보험차익","단기저축성보험 등 법정 요건"],["비영업대금의 이익","돈 빌려주고 받는 이익"],["연체이자","외상매출금을 소비대차로 전환한 경우"]]]],"함정: 계약 위약·해약 손해배상금의 법정이자는 이자소득 아님 / 보험기간 10년 이상이라고 무조건 비과세 아님"],
+["📈","배당소득의 종류","현금배당만이 아니다",[["l",[["일반배당","이익·잉여금을 배당받는 것"],["의제배당","감자·해산·합병 등으로 받은 이익 중 법에서 배당으로 보는 것"],["인정배당","법인세법에 따라 배당으로 처분된 금액"],["출자공동사업자 배당","공동사업에 출자한 자가 받는 배당"]]]],"인정배당 ≠ 의제배당"],
+["🗓","이자소득 수입시기","귀속연도 판단 기준",[["l",[["보통예금 등","약정에 따른 이자 지급일 등"],["통지예금","인출일"],["저축성보험 보험차익","환급금 지급일 (기일 전 해지는 해지일)"],["직장공제회 초과반환금","약정에 따른 반환금 지급일"],["비영업대금의 이익","약정에 따른 이자 지급일 등"]]]],"12월 지급 약정, 1월 수령이면 받은 날만 보지 말고 수입시기 규정 확인"],
+["🗓","배당소득 수입시기","배당 종류별로 외우기",[["l",[["잉여금 처분 배당","잉여금처분결의일"],["무기명주식 배당","지급받은 날"],["법인세법 처분(인정배당)","해당 사업연도 결산확정일"],["합병 의제배당","합병등기일"],["감자 의제배당","감자 결의일"],["해산 의제배당","잔여재산가액 확정일 등"]]]],"일반 잉여금처분 = 결의일 / 인정배당 = 결산확정일"]
+]],
+["🧩","금융소득 과세","종합·분리과세, 원천징수, Gross-up",[
+["⚖️","종합과세 vs 분리과세","합산하느냐, 따로 과세하느냐",[["v",[["종합과세","다른 종합소득과 합산","일반 금융소득은 이자+배당 합계 2,000만 원 초과 시 대상"],["분리과세","합산하지 않고 별도 과세","법정 무조건 분리과세 등"]]]]],
+["🔒","무조건 종합·분리","따로 외울 항목",[["v",[["무조건 종합","출자공동사업자의 배당소득"],["무조건 분리","비실명 이자·배당","직장공제회 초과반환금","법원보관금 등 이자","요건 충족 장기채권 이자·할인액"]]]],"비영업대금의 이익을 무조건 분리과세라고 단정하면 함정"],
+["✂️","원천징수세율","소득 종류별 세율",[["g",[["14%","일반 이자·배당, 법원보관금 이자"],["25%","비영업대금의 이익, 출자공동사업자 배당"],["45%","비실명 이자소득"]]]],"일반 이자와 비영업대금의 이익을 혼동 주의"],
+["➕","Gross-up(배당가산)","법인세·소득세 이중과세 조정",[["c",["적용 대상","제외",[["배당","내국법인 일반 배당, 인정배당","외국법인 배당, 출자공동사업자 배당"]]]],["big","귀속법인세 = 조정대상 배당소득 × 11%"],["big","배당세액공제 = min(귀속법인세, 공제한도액)"],["l",[["공제한도액","종합소득산출세액 − 비교산출세액"]]]],"귀속법인세가 계산돼도 전액 공제 아님 → 한도와 비교"],
+["🔢","금융소득 합산 순서","조정대상 배당소득 구성",[["f",[["이자소득부터 합산",""],["Gross-up 적용 안 되는 배당 합산",""],["Gross-up 적용되는 배당 합산","배당세액공제 계산에서 중요"]]]]]
+]],
+["🏪","사업소득 수입","비과세, 총수입금액, 전속계약금",[
+["🌾","비과세 사업소득","수치 기준이 함정",[["l",[["논·밭 임대","작물 생산에 이용하게 하는 소득 비과세"],["1주택 임대","기준시가 12억 원 초과·국외 소재 주택은 예외"],["농가부업소득","법정 범위·한도 충족 시"],["전통주 제조","연 1,200만 원 이하 등 요건"],["임목 벌채·양도","조림 5년 이상 임지, 연 600만 원 이하"],["작물재배업(식량작물 제외)","수입금액 합계 10억 원 이하 등 요건"]]]],"1주택이라고 무조건 비과세 아님"],
+["➕","총수입금액 산입 vs 불산입","더할 것과 뺄 것",[["v",[["산입","상품·제품 판매금액","판매장려금","사업 관련 보험차익","재고자산 가사용 소비액","재고자산을 종업원·타인에게 지급한 가액"],["불산입","소득세·지방소득세 환급액","이월결손금 보전 충당 자산수증이익·채무면제이익","부가가치세 매출세액","사업과 무관한 이자·배당"]]]],"가사용 재고자산은 팔지 않아도 산입 / 필요경비로 지출한 세액 환급은 산입 예외 있음"],
+["🧺","항목별 처리","자료를 분류한 뒤 계산",[["l",[["매출액·판매장려금","산입"],["예금이자","이자소득 (사업소득 제외)"],["사업 여유자금 대여이자","비영업대금의 이익 등"],["배당금","배당소득"],["소득세 환급액","원칙적 불산입"],["유형자산 처분이익","복식부기의무자 여부 확인"]]],["big","총수입금액 = 매출액 + 산입 수익 + 가사용 재고자산 가액 − 불산입 항목"]],"주어진 자료를 전부 더하는 게 아님!"],
+["🎤","전속계약금","계약기간으로 안분",[["big","해당 연도 수입금액 = 전속계약금 × 해당 연도 계약기간 ÷ 전체 계약기간"],["l",[["예시","4억 원 × 6개월 ÷ 24개월 = 1억 원"],["주의","수령일이 아니라 계약기간 귀속 기간 확인"]]]],"연예인 등 계속·반복 인적용역 → 사업소득 가능"],
+["⏰","사업소득 수입시기","거래 유형별",[["l",[["일반 판매","판매가 확정되는 날"],["위탁판매","수탁자가 판매한 날 (맡긴 날 아님)"],["무인판매기","현금을 인출하는 때"],["인적용역","대가 지급 약정일 또는 완료일 중 빠른 날 등"]]]]],
+["🧑‍💼","연말정산 가능한 사업소득자","요건 충족 시",[["g",[["보험 모집인",""],["방문판매원",""],["계약배달판매용역자",""]]]],"저술가·작곡가는 기타소득/사업소득 구분 필요, 직업명만 보고 판단 금지"]
+]],
+["🧮","필요경비·계산","사업소득금액 구하기",[
+["🧾","사업소득금액","총수입에서 필요경비를 뺀다",[["big","사업소득금액 = 총수입금액 − 필요경비"],["v",[["필요경비 불인정","대표자 본인 급여","소득세·지방소득세","가산세·강제징수비","고의·중과실 손해배상금","선급비용 등 당기 비귀속"],["필요경비 인정","사업 관련 통상 비용","요건 충족 지급이자","지역가입 국민건강보험료·노인장기요양보험료"]]]],"대표자 급여 불인정은 계산문제 단골"],
+["🔧","당기순이익 → 사업소득금액","세무조정 방향",[["c",["항목","조정",[["대표자 급여 비용처리","불인정","가산"],["비영업대금의 이익 수익","이자소득","제외"],["소득세 환급액 수익","불산입","차감"],["가사용 재고자산","산입","세법 따라 조정"],["필요경비 불산입 비용","불인정","가산"]]]],["f",[["당기순이익 확인",""],["필요경비 불산입 항목 가산",""],["이자·배당 등 타소득 제외",""],["누락된 총수입금액 반영",""],["인정되는 필요경비 확인 후 최종 계산",""]]]]],
+["🏗","유형자산 처분·폐기","주의 포인트",[["l",[["복식부기 아닌 개인사업자","사업용 유형자산 처분이익 총수입금액 산입 안 함"],["복식부기의무자","자산 종류·처분 규정 따라 판단"],["기계장치 폐기손실","상각누계액 등 확인, 장부 전액 인정 아님"]]]]],
+["🚗","업무용 승용차","차량마다 다르게 적용",[["g",[["감가상각","정액법"],["내용연수","5년"],["업무전용자동차보험","대상 사업자·차량 요건 확인"],["장부·소유 형태","간편장부대상자·종업원 명의 등 확인"]]]]],
+["🤝","기업업무추진비 한도","옛 접대비",[["big","한도초과액 = 지출액 − 세법상 인정 한도액"],["f",[["중소기업 여부 확인",""],["사업 개시 시기·수입금액 확인",""],["기본 한도 계산",""],["수입금액별 추가 한도 계산",""],["지출액과 비교해 초과액 산출","초과액은 필요경비 불산입"]]]],"예: 일반수입금액 10억 원, 지출 4,000만 원 → 수업 계산식으로 한도 계산"]
+]],
+["🔢","암기표","시험 직전 숫자와 비교",[
+["🔢","숫자 한눈에","연습문제 기준",[["g",[["183일","거주자 판정 국내 거소"],["15일","납세지 변경 신고"],["5년","업무용 승용차 내용연수"],["11%","Gross-up 비율"],["14%","일반 이자·배당 원천징수"],["25%","비영업대금·출자공동사업자 배당"],["45%","비실명 이자소득"],["2,000만 원","금융소득 종합과세 기준"],["12억 원","1주택 임대 기준시가"],["600만 원","임목 벌채·양도 한도"],["1,200만 원","전통주 제조 한도"],["10억 원","작물재배업 판단 기준"]]]],"세율·한도는 소득 종류와 요건에 따라 달라질 수 있음"],
+["🆚","헷갈리는 비교","한 줄로 구분",[["l",[["거주자 vs 비거주자","국내외 원천소득 과세 여부"],["일반배당 vs 인정배당","잉여금 처분 vs 법인세법상 처분"],["종합 vs 분리","다른 소득과 합산하는가"],["Gross-up 대상 vs 제외","배당이라고 모두 대상 아님"],["산입 vs 불산입","사업 관련 수익인가, 다른 소득인가"],["필요경비 인정 vs 불인정","대표자 급여 등 확인"],["전속계약금 수령 vs 귀속","계약기간으로 안분"]]]]],
+["🎯","공부 우선순위","계산부터",[["f",[["1순위 계산문제","사업소득금액, 총수입금액, 전속계약금, Gross-up·배당세액공제, 기업업무추진비 한도초과액"],["2순위 소득 구분·수입시기","이자·배당 종류, 수입시기, 종합·분리, 인정배당 vs 의제배당"],["3순위 기본 개념·숫자","거주자·비거주자, 과세기간, 납세지, 비과세 사업소득, 원천징수세율"]]]],"틀린 보기가 왜 틀렸는지 한 줄로 설명해 보기, 주관식은 숫자를 바꿔 연습"]
+]]
+];
+const n=document.getElementById('n'),m=document.getElementById('m');
+D.forEach((c,i)=>{const b=document.createElement('button');b.innerHTML=`<span>${c[0]}</span>${c[1]}`;b.onclick=()=>show(i);n.appendChild(b)});
+const cc=i=>'c'+(i%5);
+const R={
+l:d=>d.map((r,i)=>`<div class="r"><b class="p ${cc(i)}">${r[0]}</b><span>${r[1]}</span></div>`).join(''),
+g:d=>`<div class="g">${d.map((r,i)=>`<div class="t ${cc(i)}"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</div>`,
+f:d=>`<ol class="f">${d.map((r,i)=>`<li><i>${i+1}</i><div><b>${r[0]}</b>${r[1]?`<span>${r[1]}</span>`:''}</div></li>`).join('')}</ol>`,
+v:d=>`<div class="v">${d.map((r,i)=>`<div class="${cc(i*2)}"><b>${r[0]}</b>${r.slice(1).map(x=>`<p>${x}</p>`).join('')}</div>`).join('')}</div>`,
+c:d=>`<div class="cmp"><div class="h"></div><div class="h">${d[0]}</div><div class="h">${d[1]}</div>${d[2].map(r=>`<div class="l">${r[0]}</div><div>${r[1]}</div><div>${r[2]}</div>`).join('')}</div>`,
+big:d=>`<div class="big">${d}</div>`
+};
+function show(i){
+[...n.children].forEach((b,j)=>b.classList.toggle('on',i===j));
+const c=D[i];
+m.innerHTML=`<div class="intro"><b>${c[0]} ${c[1]}</b>${c[2]}</div>`+c[3].map(s=>`<section class="s"><h2><i>${s[0]}</i>${s[1]}</h2><div class="q">${s[2]}</div>${s[3].map(b=>`<div class="blk">${R[b[0]](b[1])}</div>`).join('')}${s[4]?`<div class="k">${s[4]}</div>`:''}</section>`).join('');
+scrollTo(0,0);
+}
+show(0);
+let t=0;
+document.addEventListener('touchend',e=>{const x=Date.now();if(x-t<350)e.preventDefault();t=x},{passive:false});
+['gesturestart','gesturechange','dblclick'].forEach(v=>document.addEventListener(v,e=>e.preventDefault()));
+</script>
+</body>
+</html>
