@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>소비자행동론 요약</title>
+<style>
+:root{--bg:#f7f2e8;--card:#fffdf8;--ink:#2d2b26;--mut:#6f6a5f;--line:#e8e0cf;--ac:#3f6b5e;
+--c0:#e3eee6;--c1:#f6e6d3;--c2:#e1ebf3;--c3:#f3e1e3;--c4:#ebe4f3;--c5:#f4efc9}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+header{padding:calc(env(safe-area-inset-top,0px) + 16px) 18px 8px}
+header a{font-size:13px;color:var(--ac);text-decoration:none;font-weight:700;display:inline-block;padding:4px 0;touch-action:manipulation}
+h1{font-size:22px;font-weight:800}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 14px 10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+nav button{font:inherit;font-size:12.5px;line-height:1.25;padding:7px 2px;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:12px;touch-action:manipulation}
+nav button span{display:block;font-size:18px}
+nav button.on{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+main{padding:14px 14px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.pane{display:none}
+.pane.on{display:block}
+.intro{background:var(--ac);color:#fff;border-radius:16px;padding:14px 16px;margin-bottom:14px;font-size:14px}
+.intro b{display:block;font-size:17px;margin-bottom:2px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px}
+.s h2{font-size:16.5px;font-weight:800;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.s h2 i{font-style:normal;font-size:20px}
+.s h3{font-size:14px;font-weight:800;color:var(--ac);margin:12px 0 4px}
+.s p{font-size:14px;color:#3d3b35;margin-top:4px}
+.s ul{list-style:none;margin-top:4px}
+.s li{font-size:14px;color:#3d3b35;padding:3px 0 3px 14px;position:relative}
+.s li::before{content:"";position:absolute;left:2px;top:11px;width:5px;height:5px;border-radius:50%;background:var(--ac)}
+.s li b{font-weight:700}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.g .t{border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
+.g .t:last-child:nth-child(odd){grid-column:span 2}
+.t b{font-size:14px}.t span{font-size:13px;color:#46433b;line-height:1.5}
+.f{list-style:none;margin-top:8px}
+.f li{display:flex;gap:10px;position:relative;padding:0 0 12px 0}
+.f li:last-child{padding-bottom:0}
+.f li::before{content:"";position:absolute;left:12px;top:26px;bottom:2px;width:2px;background:var(--line);padding:0}
+.f li:last-child::before{display:none}
+.f i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-style:normal;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.f b{display:block;font-size:14.5px}.f span{font-size:13px;color:var(--mut)}
+.cmp{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:1px;background:var(--line);border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-top:8px}
+.cmp div{background:var(--card);padding:7px 8px;font-size:12.5px;line-height:1.45}
+.cmp .h{font-weight:800;text-align:center;background:#f4f1e8}
+.cmp .l{font-weight:700;color:var(--ac);background:#f4f1e8}
+.k{margin-top:12px;padding:9px 12px;border-left:4px solid var(--ac);background:#f1f5f0;border-radius:6px;font-size:13.5px;font-weight:600;color:#27483e}
+.k::before{content:"📌 "}
+.big{text-align:center;font-weight:800;font-size:15px;line-height:1.5;background:var(--c0);color:#27483e;border-radius:12px;padding:12px 10px;margin-top:8px}
+.c0{background:var(--c0)}.c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}.c4{background:var(--c4)}.c5{background:var(--c5)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px;font-size:13px;font-weight:700}
+.flow span{background:var(--c2);border-radius:99px;padding:4px 10px}
+.flow em{font-style:normal;color:var(--mut)}
+.note{font-size:12.5px;color:var(--mut);margin-top:8px}
+</style>
+</head>
+<body>
+<header><a href="index.html">‹ 홈으로</a><h1>🛍️ 소비자행동론</h1></header>
+<nav id="n"></nav>
+<main>
+
+<!-- 0장 -->
+<section class="pane on">
+  <div class="intro"><b>Orientation</b>소비자행동은 문제를 해결하려고 제품을 사는 전 과정의 의사결정이야.</div>
+
+  <div class="s">
+    <h2><i>🧭</i>소비자행동의 개념</h2>
+    <ul>
+      <li>소비자가 자신의 문제를 해결하기 위해 제품을 구매하는 과정 전반의 의사결정 행위.</li>
+      <li>이해하면 고객 중심의 마케팅 전략을 세울 수 있어.</li>
+      <li>인지적·감성적·행동적 특성을 함께 파악하는 것이 중요해.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>🧩</i>영향 요인</h2>
+    <div class="g">
+      <div class="t c0"><b>내부적 요인</b><span>개인 특성, 심리 상태, 가치관, 라이프스타일</span></div>
+      <div class="t c1"><b>외부적 요인</b><span>사회·문화, 가족, 준거집단, 마케팅 자극</span></div>
+      <div class="t c2"><b>상황적 요인</b><span>구매 시점, 장소, 구매 목적 (예: 할인 기간, 선물)</span></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2><i>🛒</i>구매 의사결정 5단계</h2>
+    <ol class="f">
+      <li><i>1</i><div><b>문제 인식</b><span>현재 상태와 원하는 상태의 차이를 느껴.</span></div></li>
+      <li><i>2</i><div><b>정보 탐색</b><span>내부 정보(기억·경험)와 외부 정보(광고·리뷰·추천)를 찾아.</span></div></li>
+      <li><i>3</i><div><b>대안 평가</b><span>가격·품질·브랜드·기능·디자인 등을 기준으로 비교해.</span></div></li>
+      <li><i>4</i><div><b>구매 결정</b><span>평가한 대안 중 하나를 골라 구매해.</span></div></li>
+      <li><i>5</i><div><b>구매 후 평가</b><span>기대와 실제 성능을 비교해 만족 또는 불만족을 형성해.</span></div></li>
+    </ol>
+    <div class="g">
+      <div class="t c3"><b>기대 초과</b><span>높은 만족, 재구매 증가</span></div>
+      <div class="t c4"><b>기대 일치</b><span>적정 만족, 지속 사용</span></div>
+      <div class="t c5"><b>기대 미달</b><span>불만족, 브랜드 전환 가능</span></div>
+    </div>
+    <p class="note">불만족 고객의 의견에 신속·공정하게 대응하는 것이 장기 고객관계의 핵심이야.</p>
+  </div>
+</section>
+
+<!-- 1장 -->
+<section class="pane">
+  <div class="intro"><b>1장. 소비자행동의 이해</b>욕구를 파악하고, 가치를 제안하고, 시장을 나누는 과정을 다뤄.</div>
+
+  <div class="s">
+    <h2><i>💭</i>욕구와 고객가치</h2>
+    <ul>
+      <li><b>본원적 욕구</b>: 기본적인 결핍 상태. <b>구체적 욕구</b>: 그것을 채우는 구체적 수단.</li>
+      <li><b>회복욕구</b>: 결핍을 원래 수준으로 되돌리려는 욕구. <b>향상욕구</b>: 삶의 질을 더 높이려는 욕구.</li>
+    </ul>
+    <div class="g">
+      <div class="t c0"><b>고객가치</b><span>소비자가 실제로 느끼는 편익과 만족의 크기</span></div>
+      <div class="t c1"><b>가치제안</b><span>기업이 소비자에게 제공하겠다고 약속하는 가치</span></div>
+      <div class="t c2"><b>품질</b><span>고객이 고려하는 기본 경쟁우위 요소, 만족·수익성과 연결</span></div>
+      <div class="t c3"><b>욕구</b><span>소비자가 원하는 것 (소비자 중심 표현)</span></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2><i>🔍</i>소비자 욕구 분석 방법</h2>
+    <h3>질문조사</h3>
+    <ul>
+      <li><b>FGI(표적집단면접)</b>: 6~10명 집단 토론으로 깊이 있는 정성 정보 수집.</li>
+      <li><b>심층면접</b>: 일대일로 구매 동기·불만을 자세히 파악.</li>
+      <li><b>서베이</b>: 구조화된 질문지로 대규모 정량 데이터 수집.</li>
+    </ul>
+    <h3>관찰·신체반응</h3>
+    <ul>
+      <li>섀도 트래킹, 비디오 에스노그래피, 홈 방문·POP 조사 같은 행동관찰법.</li>
+      <li>fMRI, 시선추적, 뉴로이미징 등 의식하지 못하는 반응을 측정.</li>
+    </ul>
+    <h3>브랜드개념도</h3>
+    <p>의식·잠재의식 속 브랜드 연상을 심층면접 등으로 파악해 공유 개념도로 정리해. (예: 스타벅스의 따뜻함·휴식·프리미엄 이미지)</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🎯</i>STP와 4P</h2>
+    <div class="flow"><span>시장세분화</span><em>→</em><span>표적시장 선정</span><em>→</em><span>제품포지셔닝</span></div>
+    <ul>
+      <li><b>세분화</b>: 지리적·인구통계적·심리적·행동적 특성으로 집단 구분.</li>
+      <li><b>표적시장</b>: 자원·역량·시장 매력도를 보고 공략할 시장 선택.</li>
+      <li><b>포지셔닝</b>: 경쟁 제품과 차별화된 이미지를 소비자 인식 속에 구축.</li>
+    </ul>
+    <p class="note">이후 표적시장에 맞춰 4P(Product·Price·Place·Promotion)를 구성해.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🌱</i>새로운 욕구 분석 접근</h2>
+    <ul>
+      <li>기존 분석은 이미 알려진 욕구에 머물러 새로운 욕구를 찾기 어려워. 그래서 ICT와 데이터를 활용해.</li>
+      <li><b>잠재욕구 발굴</b>: 소비자가 스스로 인식하지 못한 욕구 찾기.</li>
+      <li><b>컨버전스 욕구</b>: 둘 이상의 욕구가 결합해 새로 나타나는 욕구.</li>
+      <li><b>시계열 분석</b>: 시간에 따른 욕구 변화와 패턴을 추적.</li>
+    </ul>
+    <h3>PTS 접근법</h3>
+    <div class="flow"><span>Proposal 기획</span><em>→</em><span>Targeting 초기 고객 유인</span><em>→</em><span>Setting 진입장벽</span></div>
+  </div>
+
+  <div class="s">
+    <h2><i>📚</i>연구 관점의 흐름</h2>
+    <div class="flow"><span>심리분석</span><em>→</em><span>행동주의</span><em>→</em><span>인지심리학</span><em>→</em><span>정보처리 모델</span></div>
+    <p class="note">사이코그래픽스는 활동(Activities)·관심(Interests)·의견(Opinions)으로 라이프스타일을 분석하는 접근이야.</p>
+  </div>
+</section>
+
+<!-- 2장 -->
+<section class="pane">
+  <div class="intro"><b>2장. 연구 패러다임의 변화</b>합리적 정보처리에서 감정·상징·심리 편향까지 넓어진 흐름이야.</div>
+
+  <div class="s">
+    <h2><i>🔁</i>행동과학 → 정보처리 관점</h2>
+    <ul>
+      <li>프로이트 심리분석, 동기조사, 자극-반응(S-R) 모델을 소비자 설명에 적용.</li>
+      <li>정보처리 관점은 소비자가 합리적으로 정보를 처리해 효용을 극대화한다고 가정해.</li>
+      <li>다만 감정·즐거움·쾌락은 충분히 설명하지 못해서 경험적 관점이 등장했어.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>✨</i>경험적 관점과 상징적 소비</h2>
+    <div class="g">
+      <div class="t c0"><b>다감각적</b><span>시각·청각·촉각 등 여러 감각의 경험</span></div>
+      <div class="t c1"><b>환상적</b><span>제품 사용을 통한 상상과 꿈</span></div>
+      <div class="t c2"><b>정서적</b><span>감정적 반응과 만족 중시</span></div>
+      <div class="t c3"><b>상징적 의미</b><span>디자인·색상·브랜드로 개성과 지위 표현</span></div>
+    </div>
+    <p class="note">상징적 의미는 유형적(외적 의미)·감정적(심리 반응)·공적/사적(사회적 의미 vs 개인적 의미) 차원으로 나눠.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>⚖️</i>경제학의 관점</h2>
+    <h3>전통 경제학</h3>
+    <ul>
+      <li>한정된 자원으로 효용을 극대화한다고 봐. 무차별곡선과 예산선이 접하는 점이 최적선택이야.</li>
+      <li>불확실한 상황에서는 기대수익이 아니라 기대효용을 극대화한다고 설명해.</li>
+    </ul>
+    <h3>행동경제학</h3>
+    <ul>
+      <li><b>제한된 합리성</b>: 처리 능력에 한계가 있어 최적보다 '적당히 만족스러운' 대안을 골라.</li>
+      <li><b>프로스펙트 이론</b>: 가치함수와 가중함수로 기대효용이론이 설명하지 못하는 선택을 설명해.</li>
+      <li><b>휴리스틱·편향</b>: 휴리스틱은 빠른 판단을 위한 경험칙, 편향은 그 과정에서 생기는 체계적 오류.</li>
+      <li><b>심리적 회계</b>: 돈을 식비·여가비·저축 등 마음속 계정으로 나눠 관리해서, 같은 금액도 계정에 따라 판단이 달라져.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>🗺️</i>고객 여정 모델의 변화</h2>
+    <h3>전통적 퍼널 (선형 구조)</h3>
+    <div class="flow"><span>인지</span><em>→</em><span>친숙</span><em>→</em><span>고려</span><em>→</em><span>구매</span><em>→</em><span>충성도</span></div>
+    <p class="note">구매까지의 선형 흐름만 가정해서 구매 후 관계의 복잡성을 충분히 담지 못해.</p>
+    <h3>코틀러의 5A</h3>
+    <div class="cmp">
+      <div class="h">단계</div><div class="h">의미</div><div class="h">특징</div>
+      <div class="l">Aware</div><div>브랜드를 처음 앎</div><div>인지</div>
+      <div class="l">Appeal</div><div>매력을 느낌</div><div>호감</div>
+      <div class="l">Ask</div><div>정보 탐색·질문</div><div>질문 단계 추가</div>
+      <div class="l">Act</div><div>구매·사용</div><div>행동</div>
+      <div class="l">Advocate</div><div>만족한 고객이 추천</div><div>옹호 단계 추가</div>
+    </div>
+    <h3>디지털 시대의 모래시계 7단계</h3>
+    <p>Know(인지) → Like(선호) → Trust(신뢰) → Try(시도) → Buy(구매) → Repeat(재구매) → Refer(추천)</p>
+    <p class="note">확장된 10단계 모델은 구매 전후의 고객 성장을 더 세밀하게 관리하는 구조로, 자료에 전체 명칭이 모두 나와 있지 않아 특징 중심으로 이해하면 돼.</p>
+  </div>
+
+  <div class="big">마케팅은 구매 순간에서 나아가, 구매 전부터 후까지 고객 여정 전체를 관리하는 방향으로 바뀌었어.</div>
+</section>
+
+<!-- 3장 -->
+<section class="pane">
+  <div class="intro"><b>3장. 문화와 사회계층</b>사회의 가치관·규범과 사회경제적 지위가 소비 방식에 영향을 줘.</div>
+
+  <div class="s">
+    <h2><i>🌏</i>문화의 개념과 특성</h2>
+    <p>특정 사회 구성원이 공유하는 전통·관습·가치관·언어·의례와, 그들이 쓰고 소비하는 제품·서비스까지 포함하는 넓은 개념이야.</p>
+    <ul>
+      <li>학습되고 공유되며, 시대에 따라 변해.</li>
+      <li>공통성과 다양성을 함께 가지고, 행동의 기준과 규범을 제공해.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>🧱</i>문화의 구성요소</h2>
+    <div class="cmp" style="grid-template-columns:1fr 1.6fr">
+      <div class="h">구성요소</div><div class="h">핵심 내용</div>
+      <div class="l">가치관과 신념</div><div>옳고 그름을 판단하는 기준</div>
+      <div class="l">관습</div><div>상황에 맞는 일상적·습관적 행동양식</div>
+      <div class="l">의례</div><div>상징적 의미를 가진 반복적 행동</div>
+      <div class="l">언어와 상징</div><div>의미·감정을 전달하는 수단</div>
+      <div class="l">법률</div><div>성문화된 사회 규칙</div>
+      <div class="l">신화</div><div>문화적 정서와 이념을 담은 이야기</div>
+      <div class="l">물질적 요소</div><div>일상에서 쓰는 제품 등</div>
+    </div>
+    <p class="note">관습은 일상 행동양식, 의례는 상징성을 띤 반복 행동이라는 차이를 기억해.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🌐</i>문화의 수준과 마케팅 전략</h2>
+    <p>문화는 초국가 → 국가 → 직업 → 조직 → 집단 문화 등 여러 수준으로 구성돼. 한 사람은 여러 수준의 영향을 동시에 받아.</p>
+    <div class="g">
+      <div class="t c0"><b>표준화 전략</b><span>여러 시장에 공통된 제품·마케팅 사용</span></div>
+      <div class="t c1"><b>차별화 전략</b><span>각 문화의 가치관·소비 특성에 맞게 조정</span></div>
+    </div>
+    <p class="note">비교문화는 문화 간 공통점과 차이를 비교하는 관점이고, 하위문화는 큰 문화 안에서 특정 집단이 공유하는 특성이야.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🪜</i>사회계층</h2>
+    <p>직업·부·교육·경제적 지위가 비슷해 신념·가치관·취미·라이프스타일을 공유하는 집단이야.</p>
+    <ul>
+      <li>사회적 신분을 나타내고, 계층 구조를 가지며, 계층 간 이동이 가능해.</li>
+      <li>같은 계층 안에서 상호교류가 활발하고, 여러 요인으로 결정되는 다원적 특성을 가져.</li>
+      <li>결정요인: 직업·성과, 소득, 소유물, 사회적 상호작용, 주거지역·가족배경, 교육수준 등.</li>
+    </ul>
+    <h3>측정 방법</h3>
+    <div class="g">
+      <div class="t c2"><b>주관적</b><span>본인이 자신의 계층을 평가</span></div>
+      <div class="t c3"><b>평가적</b><span>다른 사람이 대상자의 계층을 평가</span></div>
+      <div class="t c4"><b>객관적</b><span>직업·소득·교육 등 객관적 속성으로 측정</span></div>
+    </div>
+    <p class="note">자료에서는 Warner의 지위특성지표(ISC)도 다뤄.</p>
+  </div>
+</section>
+
+<!-- 4장 -->
+<section class="pane">
+  <div class="intro"><b>4장. 준거집단과 가족</b>주변 집단과 가족의 기대·역할이 구매 선택을 바꿔.</div>
+
+  <div class="s">
+    <h2><i>👥</i>준거집단</h2>
+    <p>개인이 태도·가치관·행동을 형성할 때 기준으로 삼는 집단이야. 속해 있는 집단뿐 아니라 속하고 싶은 집단도 포함해.</p>
+    <div class="g">
+      <div class="t c0"><b>1차 집단</b><span>가족·친구·동료처럼 자주 상호작용</span></div>
+      <div class="t c1"><b>2차 집단</b><span>종교단체·직업협회처럼 형식적·간헐적 상호작용</span></div>
+      <div class="t c2"><b>긍정적 준거집단</b><span>따르고 싶고 동일시하고 싶은 집단</span></div>
+      <div class="t c3"><b>부정적 준거집단</b><span>소속되거나 동일시하기 피하고 싶은 집단</span></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2><i>📣</i>영향의 유형</h2>
+    <div class="cmp">
+      <div class="h">구분</div><div class="h">규범적 영향</div><div class="h">가치표현적 영향</div>
+      <div class="l">핵심</div><div>집단의 기대·규범에 맞춤</div><div>집단의 가치·정체성을 표현</div>
+      <div class="l">동기</div><div>승인 얻기, 거부·비판 피하기</div><div>동일시, 자아 표현</div>
+    </div>
+    <p class="note">공개적으로 보이는 제품(자동차·의류·음식점)은 준거집단 영향이 강하고, 사적 제품(세제·화장지)은 상대적으로 약해.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🛒</i>의사결정 단계별 영향</h2>
+    <ul>
+      <li><b>문제 인식</b>: 친구 추천이나 주변의 사용 경험으로 필요성을 느껴.</li>
+      <li><b>정보 탐색</b>: 단체 채팅방, SNS, 주변 의견에서 정보를 모아.</li>
+      <li><b>대안 평가·구매</b>: 주변이 선호하는 브랜드를 고려해.</li>
+    </ul>
+    <p class="note">고관여 제품일수록 준거집단의 영향이 커질 수 있어.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🏠</i>가족의 역할과 생애주기</h2>
+    <p>가족은 공동의 목표와 가치관을 공유하는 대표적 1차 집단이야. 구매 과정에서 한 사람이 여러 역할을 맡을 수도 있어.</p>
+    <div class="g">
+      <div class="t c0"><b>정보 탐색자</b><span>제품 정보를 수집</span></div>
+      <div class="t c1"><b>영향력 행사자</b><span>선택에 영향을 줌</span></div>
+      <div class="t c2"><b>의사결정자</b><span>최종 결정</span></div>
+      <div class="t c3"><b>구매자·사용자</b><span>실제 구매하고 사용</span></div>
+    </div>
+    <h3>생애주기별 소비</h3>
+    <div class="cmp" style="grid-template-columns:.9fr 1.6fr">
+      <div class="h">단계</div><div class="h">소비 특성</div>
+      <div class="l">독신</div><div>개인의 필요와 선호 중심</div>
+      <div class="l">신혼</div><div>협상과 타협, 가구·가전 등 내구재</div>
+      <div class="l">자녀 양육</div><div>교육·건강·생활 소비 증가</div>
+      <div class="l">자녀 독립</div><div>양육비 감소, 여가·건강 소비 증가</div>
+    </div>
+    <h3>가족 내 의사결정</h3>
+    <ul>
+      <li>자동차·주택·보험 같은 고가 내구재와 일상 소비재는 주도하는 구성원이 다르게 나타나는 사례가 제시돼.</li>
+      <li>휴가·자녀 교육·주택처럼 가족 전체에 영향을 주는 결정은 공동으로 이뤄져.</li>
+      <li>자녀가 성장할수록 의류·전자제품·식음료 선택에 영향이 커질 수 있어.</li>
+    </ul>
+    <p class="note">위 구분은 강의자료의 사례일 뿐, 모든 가정에 똑같이 적용되는 규칙은 아니야.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>📱</i>현대 소비환경과 활용</h2>
+    <ul>
+      <li>1인 가구는 개인 취향과 독립 소비, 맞벌이 가족은 시간 절약형 제품, 다문화 가족은 문화적 배경이 소비에 영향을 줘.</li>
+      <li>온라인 커뮤니티·SNS·인플루언서는 새로운 준거집단이 되어 제품 정보와 소비 규범을 전달해.</li>
+    </ul>
+    <h3>마케팅 활용</h3>
+    <ul>
+      <li>의견 지도자를 활용해 제품 정보를 전달해.</li>
+      <li>집단의 규범과 가치관에 맞는 광고 메시지를 만들어.</li>
+      <li>구매 후기와 이용자 수 같은 사회적 증거를 활용해.</li>
+      <li>브랜드 커뮤니티로 충성도와 소속감을 높여.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5장 -->
+<section class="pane">
+  <div class="intro"><b>5장. 동기·관여도·소비자 학습</b>욕구가 행동으로 이어지는 과정과, 경험으로 쌓이는 학습을 다뤄.</div>
+
+  <div class="s">
+    <h2><i>🔥</i>동기</h2>
+    <p>욕구가 자극되어 생긴 긴장을 풀기 위해 목표지향적 행동을 하게 만드는 내적 상태야.</p>
+    <div class="flow"><span>욕구 인식</span><em>→</em><span>긴장</span><em>→</em><span>목표 설정</span><em>→</em><span>행동</span><em>→</em><span>욕구 충족</span><em>→</em><span>만족</span></div>
+    <div class="g">
+      <div class="t c0"><b>생리적 요인</b><span>배고픔·갈증·수면·안전</span></div>
+      <div class="t c1"><b>인지적 요인</b><span>자아실현·성취·인정·자존감</span></div>
+      <div class="t c2"><b>외부 자극</b><span>광고·판촉·사회·문화가 욕구를 활성화</span></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2><i>⚖️</i>이성적 동기 vs 감성적 동기</h2>
+    <div class="cmp">
+      <div class="h">구분</div><div class="h">이성적</div><div class="h">감성적</div>
+      <div class="l">중심</div><div>경제성·실용성</div><div>감정·기분·즐거움</div>
+      <div class="l">판단 기준</div><div>비용 대비 효용, 기능</div><div>사회적 인정, 지위, 자아표현</div>
+    </div>
+    <p class="note">실제 구매에서는 이성과 감성이 함께 작용해.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🌀</i>동기갈등의 유형</h2>
+    <div class="g">
+      <div class="t c0"><b>접근-접근</b><span>좋은 것 중 하나를 선택 (예: 마음에 드는 스마트폰 두 대)</span></div>
+      <div class="t c1"><b>접근-회피</b><span>장점과 단점이 공존 (예: 맛있지만 칼로리 높은 디저트)</span></div>
+      <div class="t c3"><b>회피-회피</b><span>싫은 것 중 하나를 선택 (예: 비싼 수리비 vs 새 차 구매)</span></div>
+    </div>
+    <p class="note">마케팅에서는 접근-접근이면 차별점(USP)을, 접근-회피면 장점 강조와 단점 완화를 활용해.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🔄</i>동기 관련 이론</h2>
+    <ul>
+      <li><b>반대-과정이론</b>: 긍정·부정 자극에 대해 서로 반대되는 과정이 생기고, 그중 B과정이 시간이 지나며 강해질 수 있어. (공포 후 안도감, 구매 후 죄책감 완화 등)</li>
+      <li><b>프라이밍 이론</b>: 먼저 접한 단어·이미지·소리가 이후의 행동과 개념을 무의식적으로 활성화해. (매장 음악, 패키지 색상 등)</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>🎚️</i>관여도</h2>
+    <p>소비자가 제품·광고·구매 상황에 대해 느끼는 개인적 중요성의 정도야. 관여도가 높을수록 정보 탐색과 비교가 활발해져.</p>
+    <div class="g">
+      <div class="t c0"><b>지속적 관여도</b><span>제품군에 대한 장기적 관심</span></div>
+      <div class="t c1"><b>상황적 관여도</b><span>특정 구매 상황에서 일시적으로 생김</span></div>
+      <div class="t c2"><b>인지적 관여도</b><span>정보와 기능적 속성 중시</span></div>
+      <div class="t c3"><b>감정적 관여도</b><span>즐거움·브랜드 이미지·디자인에 반응</span></div>
+    </div>
+    <h3>결정요인</h3>
+    <ul>
+      <li><b>제품</b>: 가격, 구매 주기, 지각된 위험, 사회적 가시성·상징성</li>
+      <li><b>개인</b>: 자기이미지, 건강·미용 관심, 가치와 목표, 과거 경험</li>
+      <li><b>상황</b>: 일상 구매인지 특별 구매인지, 개인용인지 선물용인지, 시간 압박</li>
+    </ul>
+    <p class="note">측정은 Zaichkowsky의 PII 측정과 Laurent &amp; Kapferer의 다차원 측정 등을 다뤄.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>📖</i>소비자 학습</h2>
+    <p>경험을 통해 제품 정보를 얻고 처리·저장·회상하는 방식이 바뀌는 과정이야. 브랜드 기억·습관·충성도의 기반이 돼.</p>
+    <div class="g">
+      <div class="t c4"><b>행동적 학습</b><span>자극과 반응의 연합 중심 (고전적·조작적 조건화)</span></div>
+      <div class="t c5"><b>인지적 학습</b><span>사고·문제해결·기억·기대를 활용</span></div>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2><i>🔔</i>고전적 조건화</h2>
+    <p>중립적 자극이 무조건 자극과 반복적으로 연결되면, 중립적 자극만으로도 비슷한 반응이 나와. (파블로프의 개: 종소리 → 침)</p>
+    <ul>
+      <li>브랜드와 긍정적인 음악, 운동선수와 스포츠 브랜드를 반복해서 연결해.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2><i>🎁</i>조작적 조건화</h2>
+    <p>행동 뒤에 주어지는 결과에 따라 그 행동이 늘거나 줄어드는 학습이야.</p>
+    <ul>
+      <li><b>긍정적 강화</b>: 포인트·할인처럼 좋은 결과를 줘서 행동을 늘려.</li>
+      <li><b>부정적 강화</b>: 불편을 없애 행동을 지속시켜. (A/S, 환불)</li>
+      <li><b>소멸</b>: 강화가 끊기면 행동이 점차 줄어들어.</li>
+      <li><b>변별 vs 일반화</b>: 특정 자극에만 반응하면 차별화, 비슷한 자극에도 반응하면 브랜드 확장의 기반이 돼.</li>
+    </ul>
+    <p class="note">쿠폰·포인트·스탬프 카드로 반복 구매와 충성도를 만들고, 보상이 끊기면 재활성화 이벤트로 감소를 막아.</p>
+  </div>
+
+  <div class="s">
+    <h2><i>🧠</i>인지적 학습과 대리 학습</h2>
+    <ul>
+      <li><b>기억·회상, 정보처리, 통찰·개념형성</b>이 핵심 요소야.</li>
+      <li>리허설(반복 처리)과 숙고(기존 지식과 연결)가 기억을 강화해. 반복 광고와 스토리텔링이 여기에 해당해.</li>
+      <li><b>관찰 학습·모델링</b>: 직접 겪지 않아도 타인의 사용과 결과를 보고 배워. 리뷰·사용 영상·유명인 사용 장면이 활용 예시야.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 시험 직전 비교 -->
+<div class="s" style="margin-top:4px">
+  <h2><i>📝</i>시험 직전 비교표</h2>
+  <div class="cmp">
+    <div class="h">비교</div><div class="h">핵심 차이</div><div class="h">구분</div>
+    <div class="l">내부 vs 외부 정보 탐색</div><div>기억·경험 vs 외부 정보원</div><div>정보 탐색 종류</div>
+    <div class="l">회복 vs 향상 욕구</div><div>결핍 회복 vs 삶의 질 향상</div><div>욕구 분류</div>
+    <div class="l">고객가치 vs 가치제안</div><div>소비자가 느끼는 가치 vs 기업이 약속하는 가치</div><div>가치 개념</div>
+    <div class="l">FGI·심층·서베이</div><div>집단 토론 · 일대일 · 질문지</div><div>조사 방법</div>
+    <div class="l">규범적 vs 가치표현적</div><div>기대에 맞춤 vs 정체성 표현</div><div>집단 영향</div>
+    <div class="l">고전 vs 조작적 조건화</div><div>자극 간 연합 vs 행동과 결과</div><div>학습 유형</div>
+    <div class="l">휴리스틱 vs 편향</div><div>빠른 판단의 경험칙 vs 체계적 오류</div><div>행동경제학</div>
+    <div class="l">전통 퍼널 vs 5A</div><div>선형 구매 흐름 vs 질문·옹호 포함</div><div>고객 여정</div>
+  </div>
+</div>
+
+<div class="big">소비자행동은 욕구와 심리, 사회적 환경, 학습이 결합해 구매와 소비 습관을 만든다.</div>
+
+</main>
+<script>
+const T=["🧭 개요","💭 1장 이해","🔁 2장 패러다임","🌏 3장 문화·계층","👥 4장 준거·가족","🔥 5장 동기·학습"];
+const n=document.getElementById('n'),panes=[...document.querySelectorAll('.pane')];
+T.forEach((t,i)=>{const b=document.createElement('button');b.innerHTML=t.replace(' ','<span>')+'</span>';
+  b.onclick=()=>{[...n.children].forEach((x,j)=>x.classList.toggle('on',j===i));panes.forEach((p,j)=>p.classList.toggle('on',j===i));window.scrollTo(0,0)};
+  if(i===0)b.className='on';n.appendChild(b)});
+let t=0;
+document.addEventListener('touchend',e=>{const x=Date.now();if(x-t<350)e.preventDefault();t=x},{passive:false});
+['gesturestart','gesturechange','dblclick'].forEach(v=>document.addEventListener(v,e=>e.preventDefault()));
+</script>
+</body>
+</html>
