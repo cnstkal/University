@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>서비스마케팅 시험 요약</title>
+<style>
+:root{--bg:#f7f2e8;--card:#fffdf8;--ink:#2d2b26;--mut:#6f6a5f;--line:#e8e0cf;--ac:#3f6b5e;
+--c0:#e3eee6;--c1:#f6e6d3;--c2:#e1ebf3;--c3:#f3e1e3;--c4:#ebe4f3;--c5:#f4efc9}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+header{padding:calc(env(safe-area-inset-top,0px) + 20px) 18px 10px}
+h1{font-size:22px;font-weight:800}
+header p{color:var(--mut);font-size:13px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 14px 10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+nav button{font:inherit;font-size:12.5px;line-height:1.25;padding:7px 2px;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:12px;touch-action:manipulation}
+nav button span{display:block;font-size:18px}
+nav button.on{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+main{padding:14px 14px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.intro{background:var(--ac);color:#fff;border-radius:16px;padding:14px 16px;margin-bottom:14px;font-size:14px}
+.intro b{display:block;font-size:17px;margin-bottom:2px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px}
+.s h2{font-size:16.5px;font-weight:800;display:flex;gap:8px;align-items:center}
+.s h2 i{font-style:normal;font-size:20px}
+.q{margin:8px 0 12px;background:var(--c5);border-radius:12px;padding:8px 12px;font-size:13.5px;color:#4d4a2a}
+.q::before{content:"쉽게 말해 ";font-weight:800}
+.blk{margin-top:10px}
+.r{padding:7px 0;display:flex;flex-direction:column;gap:3px;align-items:flex-start}
+.r+.r{border-top:1px dashed var(--line)}
+.p{font-size:13px;padding:2px 10px;border-radius:99px;font-weight:700}
+.r span{font-size:14px;color:#3d3b35}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g .t{border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
+.g .t:last-child:nth-child(odd){grid-column:span 2}
+.t b{font-size:14px}.t span{font-size:13px;color:#46433b;line-height:1.5}
+.f{list-style:none}
+.f li{display:flex;gap:10px;position:relative;padding-bottom:12px}
+.f li:last-child{padding-bottom:0}
+.f li::before{content:"";position:absolute;left:12px;top:26px;bottom:2px;width:2px;background:var(--line)}
+.f li:last-child::before{display:none}
+.f i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-style:normal;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.f b{display:block;font-size:14.5px}.f span{font-size:13px;color:var(--mut)}
+.v{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.v>div{border-radius:12px;padding:10px}
+.v b{display:block;font-size:14px;margin-bottom:4px}
+.v p{font-size:13px;line-height:1.5;color:#46433b;padding:2px 0}
+.cmp{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:1px;background:var(--line);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.cmp div{background:var(--card);padding:7px 8px;font-size:12.5px;line-height:1.45}
+.cmp .h{font-weight:800;text-align:center}
+.cmp .l{font-weight:700;color:var(--ac);background:#f4f1e8}
+.big{text-align:center;font-weight:800;font-size:16px;line-height:1.5;background:var(--c0);color:#27483e;border-radius:12px;padding:12px 10px}
+.k{margin-top:12px;padding:9px 12px;border-left:4px solid var(--ac);background:#f1f5f0;border-radius:6px;font-size:13.5px;font-weight:600;color:#27483e}
+.k::before{content:"📌 "}
+.c0{background:var(--c0)}.c1{background:var(--c1)}.c2{background:var(--c2)}.c3{background:var(--c3)}.c4{background:var(--c4)}.c5{background:var(--c5)}
+</style>
+</head>
+<body>
+<header><h1>📚 서비스마케팅 시험 요약</h1><p>탭을 눌러 장을 바꿔요</p></header>
+<nav id="n"></nav>
+<main id="m"></main>
+<script>
+const D=[
+["🧭","2주차","서비스의 이해",[
+["📖","서비스 정의","무형적 행동 + 상호작용으로 고객 문제 해결",[["l",[["스미스","비생산적 행동, 부의 축적 방해"],["마르크스","필요하지만 거래 가능한 경제행위 아님"],["AMA(1960)","판매용·재화와 연계된 행동·혜택·만족"],["핵심","무형성, 상호작용"]]]]],
+["📈","산업 성장 원인","사회 변화 · 규제 완화 · 은닉 서비스",[["g",[["사회 변화","여가·부 증가, 여성 사회진출, 고령화, 제품·삶의 복잡성↑"],["규제 완화","경쟁 환경 변화, 새 경쟁자 등장"],["은닉 서비스","기업 내부 지원활동까지 포함하면 규모↑"]]],["l",[["산업 구분","1차 농림수산·광업 / 2차 제조 / 3차 서비스"]]]]],
+["🔤","서비스 특성 IIHP","무형·비분리·이질·소멸",[["g",[["무형성","볼 수 없음 → 유형적 단서·이미지"],["비분리성","생산=소비 동시 → 종업원 훈련·고객관리"],["이질성","결과 들쭉날쭉 → 표준화·맞춤·훈련"],["소멸성","저장 불가 → 예약제·시설 다양화"]]]],"무형=못 봄 / 소멸=저장 못함 · 비분리=동시 / 이질=일정X"],
+["🔍","서비스 속성 3가지","언제 품질을 평가할 수 있나",[["l",[["탐색적","구매 전 평가 (색상·가격)"],["경험적","구매·소비 중 평가 (음식 맛)"],["신념적","후에도 평가 어려움 (수리·의료)"]]]],"재화=탐색적 / 서비스=경험적·신념적"],
+["🔺","마케팅 삼각형","기업–종업원–고객",[["l",[["외부","기업→고객: 약속 설정"],["내부","기업→종업원: 약속 가능하게"],["상호작용","종업원↔고객: 약속 전달"]]]],"설정 · 가능 · 전달"],
+["⏱","진실의 순간 MOT","접점에서 품질이 판단됨",[["g",[["하드웨어","인테리어·청결·주차"],["소프트웨어","예약·업무처리 시스템"],["휴먼웨어","직원 태도·소통"]]],["l",[["곱셈","접점 하나가 0이면 전체 0"],["깨진 유리창","사소한 실수 방치 → 큰 실패"],["100-1=0","하나의 부정 경험이 전체 하락"],["통나무 물통","가장 낮은 곳으로 샘"]]]]],
+["🧩","4P → 7P","서비스는 3개 추가",[["g",[["Physical Evidence","물적 증거: 위험↓, 품질 단서"],["People","종업원·고객"],["Process","전달 절차·흐름"]]]],"4P(제품·가격·유통·촉진) + 증거·사람·과정"]
+]],
+["🤝","3주차","서비스 고객의 이해",[
+["💼","B2B vs B2C","조직 간 vs 소비자",[["c",["B2B","B2C",[["관계","장기","상대적 단기"],["수량","많음","적음"],["주기","김","짧음"],["결정","계획적","감성적"],["브랜드","신뢰·상호관계","광고·판촉"]]]]],"관계 세일즈: 유지비<신규비, 가격 덜 민감, 윈윈"],
+["👥","고객 유형","누가 사고 누가 쓰나",[["l",[["직접","대가를 직접 지불"],["간접","다른 사람 통해 이용"],["의사결정자","구매 결정에 영향 (의사)"],["공급고객","재료 제공자"],["내부 / 외부","종업원·공급자 / 구매·이용 고객"]]]]],
+["🪜","고객 성장 6단계","의심 → 충성",[["f",[["의심고객","구매 확률 없음"],["잠재고객","이용 가능성 높음"],["가망고객","곧 구매 확실"],["일반고객","1회 이상 구매"],["단골고객","반복 구매, 타상품도"],["충성고객","옹호고객, 매출 비중 큼"]]]]],
+["💎","충성고객","반복·추천·이탈 없음",[["g",[["특징","반복구매, 추천, 경쟁사에 안 흔들림, 프리미엄 지불, 폭넓은 구매"],["확보 전략","맞춤 관리, 고객 참여, 가족처럼 친밀, 경조사 기억"],["vs 일반","충성=신뢰로 구매·충고 / 일반=비교 후 구매·불만 시 이탈"]]]]],
+["🧠","고객 심리 7가지","환영·존중·독점·우월·모방·보상·자기본위",[["l",[["환영","반갑게 맞아주길"],["존중","중요한 사람으로 기억"],["독점","독점 대우 (타 고객 불만)"],["우월","자존심 인정, 겸손 응대"],["모방","남 따라 선택"],["보상","낸 만큼 서비스"],["자기본위","내 기준 판단"]]],["l",[["요구 변화","고급화·복잡화·존중화·대등화·개인화"]]]]],
+["🌐","고객 특성 요인","문화·사회·개인·심리",[["g",[["문화","문화·하위문화·사회계층"],["사회","준거집단·의견선도자·가족"],["개인","연령·직업·경제·개성·라이프스타일"],["심리","동기·지각·학습·신념"]]],["l",[["준거집단 힘 5","강제·보상·전문·합법·준거"]]]]],
+["🔄","서비스 패러독스","품질↑인데 불만↑",[["l",[["원인","기대 수준 상승, 과거 좋은 서비스가 당연해짐, 성과-기대 간극↑"],["시사점","많이 제공 말고 핵심가치 파악·간극 축소"]]]]],
+["😊","고객만족 CS·CSM","기대 부응 → 재구매·신뢰",[["l",[["CS","기대 부응 결과 재구매·신뢰 지속. 유지비가 신규보다 4~11배 적음"],["결정 요소","제품특징·감정·기대 대비 성과·공정성·기업이미지"],["CSM","기획~판매 후 전 과정 고객 우선"],["성공 요건","CEO 의지, 조직문화, 만족조사, 공정 보상, MOT 설계"],["실패 요인","감정노동, 주관적 평가, 협업 부족, 단기성과, 비용 부담"]]]]]
+]],
+["🆕","4주차","뉴 마케팅 믹스",[
+["🔀","마케팅 변화 흐름","점점 고객·감성·인간 중심으로",[["f",[["개념","생산→판매→마케팅→사회적→총체적"],["믹스","기업 4P→고객 4C→감성 4E→인간 4C"]]]]],
+["🎯","고객 중심 4C","4P의 고객 버전",[["g",[["고객 편익","편익의 묶음, 가치 극대화"],["고객 비용","총비용 최소화"],["편의성","편리한 유통채널"],["커뮤니케이션","양방향 소통"]]]]],
+["❤️","감성 중심 4E","열광과 경험 공유",[["g",[["Evangelist 전도사","추천·충성지수 (RFM→)"],["Enthusiasm 열정","기대 이상 만족→매니아"],["Experience 체험","플래그십 등 진정성"],["Exchange 교환","커뮤니티 경험·정보 교환"]]]]],
+["🧑","인간 중심 4C","Kotler 2017",[["g",[["Co-creation 공동창조","고객이 창작 참여 (유튜브)"],["Currency 통화","동태적·유연 가격"],["Communal 공동체 활성화","옴니채널·P2P·공유경제"],["Conversation 대화","Push→Pull"]]]]],
+["3️⃣","마케팅 3.0","가치와 의미를 추구하는 인간",[["l",[["협력","프로슈머(소비자+생산자), 소셜미디어"],["문화","문화적 가치·다양성으로 차별화"],["영성","의미·자기실현, 기업 사회공헌"]]]]],
+["4️⃣","마케팅 4.0","디지털 연결 + 참여",[["l",[["의인화","육체·지성·감성·인간·인격·도덕성"],["콘텐츠","가치 있는 콘텐츠 지속 제공"],["옴니채널","채널 간 경계 없는 경험. 빅 블러=경계 융합"],["인게이지먼트","게이미피케이션(포인트·등급), 사회적 CRM"]]]]],
+["5️⃣","마케팅 5.0","데이터·기술로 예측",[["g",[["데이터 기반","빅데이터 분석"],["예측","출시 전 반응 예측"],["맥락","상황별 실시간 맞춤"],["증강","기술로 마케팅 지원"],["애자일","빠르고 유연한 대응"]]]]]
+]],
+["🎪","5주차","서비스 시장세분화",[
+["🧲","STP","나누고 · 고르고 · 자리잡기",[["f",[["Segmentation","욕구 비슷한 집단으로 분할"],["Targeting","매력도 평가 후 표적 선정"],["Positioning","마음속 차별적 이미지 + 믹스 개발"]]]],"상황분석→세분화→표적화→포지셔닝→믹스"],
+["✅","효과적 세분화 요건","측·접·규·실·차 + 동질/이질",[["g",[["측정가능성","규모·구매력 파악"],["접근가능성","도달 가능"],["충분한 규모","수익 가능"],["실행가능성","프로그램 실행"],["차별화 가능성","반응이 서로 다름"],["동질·이질","내부 비슷 / 간 다름"]]]]],
+["📊","세분화 기준 5가지","지·인·심·행·구",[["g",[["지리","지역·도시·기후·밀도"],["인구통계","연령·성별·소득·직업·종교"],["심리분석","라이프스타일(AIO: 활동·관심·의견), 개성"],["행동","편익·사용량(80/20)·상표충성도"],["구매준비단계","인지·관심·구매의욕"]]],["l",[["충성도 4유형","Hard-core(한 상표) / Soft-core(여러 상표) / Switcher(전환) / Non-loyal"]]]]],
+["⚖️","표적시장 평가","매력도·구조·적합성",[["l",[["매력도","매출·성장률·기대수익"],["구조적","경쟁자·대체재·구매자/공급자 협상력"],["적합성","자사 목표·자원에 맞나"]]]]],
+["🎯","표적시장 전략 3가지","얼마나 좁게 겨냥?",[["g",[["매스(비차별)","전체에 표준 믹스"],["세분시장(차별)","세분시장별 다른 믹스, 위험↓ 비용↑"],["개별(집중)","한 시장에 집중, 틈새"]]]]],
+["📍","포지셔닝 유형 5가지","속성·이미지·경쟁·상황·사용자",[["l",[["제품속성","차별 속성 강조"],["제품이미지","상징·감각 (할리데이비슨)"],["경쟁제품","경쟁사 비교 (대한항공)"],["사용상황","적절한 상황 (게토레이)"],["제품사용자","특정 사용자층"]]]],"포지션=소비자 인식 / 포지셔닝=이미지 창조 활동"]
+]]
+];
+const n=document.getElementById('n'),m=document.getElementById('m');
+D.forEach((c,i)=>{const b=document.createElement('button');b.innerHTML=`<span>${c[0]}</span>${c[1]}`;b.onclick=()=>show(i);n.appendChild(b)});
+const cc=i=>'c'+(i%5);
+const R={
+l:d=>d.map((r,i)=>`<div class="r"><b class="p ${cc(i)}">${r[0]}</b><span>${r[1]}</span></div>`).join(''),
+g:d=>`<div class="g">${d.map((r,i)=>`<div class="t ${cc(i)}"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</div>`,
+f:d=>`<ol class="f">${d.map((r,i)=>`<li><i>${i+1}</i><div><b>${r[0]}</b>${r[1]?`<span>${r[1]}</span>`:''}</div></li>`).join('')}</ol>`,
+v:d=>`<div class="v">${d.map((r,i)=>`<div class="${cc(i*2)}"><b>${r[0]}</b>${r.slice(1).map(x=>`<p>${x}</p>`).join('')}</div>`).join('')}</div>`,
+c:d=>`<div class="cmp"><div class="h"></div><div class="h">${d[0]}</div><div class="h">${d[1]}</div>${d[2].map(r=>`<div class="l">${r[0]}</div><div>${r[1]}</div><div>${r[2]}</div>`).join('')}</div>`,
+big:d=>`<div class="big">${d}</div>`
+};
+function show(i){
+[...n.children].forEach((b,j)=>b.classList.toggle('on',i===j));
+const c=D[i];
+m.innerHTML=`<div class="intro"><b>${c[0]} ${c[1]}</b>${c[2]}</div>`+c[3].map(s=>`<section class="s"><h2><i>${s[0]}</i>${s[1]}</h2><div class="q">${s[2]}</div>${s[3].map(b=>`<div class="blk">${R[b[0]](b[1])}</div>`).join('')}${s[4]?`<div class="k">${s[4]}</div>`:''}</section>`).join('');
+scrollTo(0,0);
+}
+show(0);
+let t=0;
+document.addEventListener('touchend',e=>{const x=Date.now();if(x-t<350)e.preventDefault();t=x},{passive:false});
+['gesturestart','gesturechange','dblclick'].forEach(v=>document.addEventListener(v,e=>e.preventDefault()));
+</script>
+</body>
+</html>
